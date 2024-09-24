@@ -1,0 +1,14 @@
+C:\users\vikto\onedrive\Skrivbord\Vs-code\School2\bin\Debug\net8.0\School2.exe
+C:\users\vikto\onedrive\Skrivbord\Vs-code\School2\bin\Debug\net8.0\School2.deps.json
+C:\users\vikto\onedrive\Skrivbord\Vs-code\School2\bin\Debug\net8.0\School2.runtimeconfig.json
+C:\users\vikto\onedrive\Skrivbord\Vs-code\School2\bin\Debug\net8.0\School2.dll
+C:\users\vikto\onedrive\Skrivbord\Vs-code\School2\bin\Debug\net8.0\School2.pdb
+C:\users\vikto\onedrive\Skrivbord\Vs-code\School2\obj\Debug\net8.0\School2.GeneratedMSBuildEditorConfig.editorconfig
+C:\users\vikto\onedrive\Skrivbord\Vs-code\School2\obj\Debug\net8.0\School2.AssemblyInfoInputs.cache
+C:\users\vikto\onedrive\Skrivbord\Vs-code\School2\obj\Debug\net8.0\School2.AssemblyInfo.cs
+C:\users\vikto\onedrive\Skrivbord\Vs-code\School2\obj\Debug\net8.0\School2.csproj.CoreCompileInputs.cache
+C:\users\vikto\onedrive\Skrivbord\Vs-code\School2\obj\Debug\net8.0\School2.dll
+C:\users\vikto\onedrive\Skrivbord\Vs-code\School2\obj\Debug\net8.0\refint\School2.dll
+C:\users\vikto\onedrive\Skrivbord\Vs-code\School2\obj\Debug\net8.0\School2.pdb
+C:\users\vikto\onedrive\Skrivbord\Vs-code\School2\obj\Debug\net8.0\School2.genruntimeconfig.cache
+C:\users\vikto\onedrive\Skrivbord\Vs-code\School2\obj\Debug\net8.0\ref\School2.dll
