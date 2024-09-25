@@ -2,6 +2,7 @@
 
 public class Pupils : Person
 {
+    public static List<Pupils> PupilsList { get; set; } = new List<Pupils>();
     public Pupils()
     {
     }
@@ -9,6 +10,10 @@ public class Pupils : Person
     {
         SocialNumber = socialNumber;
         Find();
+    }
+    public void AddPupils(Pupils pupils)
+    {
+        PupilsList.Add(pupils);
     }
     //Metoden Find simulerar en databas 
     //Den tillkallar Find under i publiv virtual void

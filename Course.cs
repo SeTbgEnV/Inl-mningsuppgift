@@ -13,12 +13,16 @@ public class Course
     public string CourseCity { get; set; } = "";
     public string OnSite { get; set; } = "";
     public DateTime DueDate { get; set; }
-
+    public static List<Course> CourseList{ get; set; } = new List<Course>();
     /* CONSTRUCTOR */
     public Course(string courseTitel)
     {
         CourseTitel = courseTitel;
         Find();
+    }
+    public void AddCourses(Course course)
+    {
+        CourseList.Add(course);
     }
     public void Find()
     {
@@ -49,6 +53,6 @@ public class Course
     }
     public override string ToString()
     {
-        return $"\nCourseInfo\n\nWhere:{CourseCity}\nCourse:{CourseTitel} // CourseId:{CourseId}\nStart Date:{CourseStart}\nCourse Length:{CourseLength} \nOnsite:{OnSite}";
+        return $"Course Info\n\nWhere:{CourseCity}\nCourse:{CourseTitel} // CourseId:{CourseId}\nStart Date:{CourseStart}\nCourse Length:{CourseLength} \nOnsite:{OnSite}";
     }
 }
