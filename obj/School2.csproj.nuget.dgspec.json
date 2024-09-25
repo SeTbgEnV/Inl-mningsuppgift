@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\users\\vikto\\onedrive\\skrivbord\\vs-code\\school2\\School2.csproj": {}
+    "C:\\users\\vikto\\onedrive\\Skrivbord\\Vs-code\\school2\\School2.csproj": {}
   },
   "projects": {
-    "C:\\users\\vikto\\onedrive\\skrivbord\\vs-code\\school2\\School2.csproj": {
+    "C:\\users\\vikto\\onedrive\\Skrivbord\\Vs-code\\school2\\School2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\users\\vikto\\onedrive\\skrivbord\\vs-code\\school2\\School2.csproj",
+        "projectUniqueName": "C:\\users\\vikto\\onedrive\\Skrivbord\\Vs-code\\school2\\School2.csproj",
         "projectName": "School2",
-        "projectPath": "C:\\users\\vikto\\onedrive\\skrivbord\\vs-code\\school2\\School2.csproj",
+        "projectPath": "C:\\users\\vikto\\onedrive\\Skrivbord\\Vs-code\\school2\\School2.csproj",
         "packagesPath": "C:\\Users\\vikto\\.nuget\\packages\\",
-        "outputPath": "C:\\users\\vikto\\onedrive\\skrivbord\\vs-code\\school2\\obj\\",
+        "outputPath": "C:\\users\\vikto\\onedrive\\Skrivbord\\Vs-code\\school2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

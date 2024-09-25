@@ -12,3 +12,4 @@ C:\users\vikto\onedrive\Skrivbord\Vs-code\School2\obj\Debug\net8.0\refint\School
 C:\users\vikto\onedrive\Skrivbord\Vs-code\School2\obj\Debug\net8.0\School2.pdb
 C:\users\vikto\onedrive\Skrivbord\Vs-code\School2\obj\Debug\net8.0\School2.genruntimeconfig.cache
 C:\users\vikto\onedrive\Skrivbord\Vs-code\School2\obj\Debug\net8.0\ref\School2.dll
+C:\users\vikto\onedrive\Skrivbord\Vs-code\school2\obj\Debug\net8.0\School2.sourcelink.json
