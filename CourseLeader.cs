@@ -3,7 +3,7 @@
 public class CourseLeader : Teacher
 {
     //Courseleader
-    public string DateOfEmployment { get; set; } = "";
+    public string DateOfEmployment { get; protected set; } = "";
 
     /* CONSTRUCTOR */
     public CourseLeader()

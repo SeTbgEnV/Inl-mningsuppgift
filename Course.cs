@@ -1,6 +1,6 @@
 ﻿namespace School2;
 
-public class Course
+public class Course : ICourses
 {
     /* COURSE PROPERTIES */
     public string SchoolAddress { get; set; } = "";

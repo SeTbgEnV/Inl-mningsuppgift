@@ -2,10 +2,7 @@
 
 public class Pupils : Person
 {
-    public static List<Pupils> PupilsList { get; set; } = new List<Pupils>();
-    public Pupils()
-    {
-    }
+    public static List<Pupils> PupilsList { get; private set; } = new List<Pupils>();
     public Pupils(string socialNumber)
     {
         SocialNumber = socialNumber;
@@ -16,7 +13,7 @@ public class Pupils : Person
         PupilsList.Add(pupils);
     }
     //Metoden Find simulerar en databas 
-    //Den tillkallar Find under i publiv virtual void
+    //Den tillkallar Find under i public virtual void
     public virtual void Find()
     {
         if (SocialNumber == "333-555-666")

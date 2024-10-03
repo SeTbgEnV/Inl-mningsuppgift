@@ -4,18 +4,12 @@ public class Person
 {
     // PUPILS
 
-    public string FirstName { get; set; } = "";
-    public string LastName { get; set; } = "";
-    public int Age { get; set; }
-    public string PhoneNumber { get; set; } = "";
-    public string SocialNumber { get; set; } = "";
-    public string Address { get; set; } = "";
-    public string PostalCode { get; set; } = "";
-    public string City { get; set; } = "";
-
-    /* CONSTRUCTOR */
-    public Person()
-    {
-        
-    }
+    public string FirstName { get; protected set; } = "";
+    public string LastName { get; protected set; } = "";
+    public int Age { get; protected set; }
+    public string PhoneNumber { get; protected set; } = "";
+    public string SocialNumber { get; protected set; } = "";
+    public string Address { get; protected set; } = "";
+    public string PostalCode { get; protected set; } = "";
+    public string City { get; protected set; } = "";
 }

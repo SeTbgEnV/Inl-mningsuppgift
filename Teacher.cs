@@ -4,13 +4,12 @@ public class Teacher : Person
 {
     // Teacher
 
-    public string Experience { get; set; } = "";
-    public string CourseHolder { get; set; } = "";
+    public string Experience { get; protected set; } = "";
+    public string CourseHolder { get; protected set; } = "";
 
     /* CONSTRUCTOR */
     public Teacher()
     {
-        Find();
     }
     public Teacher(string socialNumber)
     {
