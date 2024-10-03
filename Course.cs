@@ -53,6 +53,6 @@ public class Course
     }
     public override string ToString()
     {
-        return $"Course Info\n\nWhere:{CourseCity}\nCourse:{CourseTitel} // CourseId:{CourseId}\nStart Date:{CourseStart}\nCourse Length:{CourseLength} \nOnsite:{OnSite}";
+        return $"\nWhere:{CourseCity}\nCourse:{CourseTitel} // CourseId:{CourseId}\nStart Date:{CourseStart}\nCourse Length:{CourseLength} \nOnsite:{OnSite}";
     }
 }
