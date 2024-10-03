@@ -1,4 +1,7 @@
-﻿namespace School2;
+﻿using System.Text.Encodings.Web;
+using System.Text.Json;
+
+namespace School2;
 
 class Program
 {
@@ -56,5 +59,34 @@ class Program
         {
             Console.WriteLine("{0}",y);
         }
+        Console.ResetColor();
+        var options = new JsonSerializerOptions()
+        {
+            PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+            WriteIndented = true,
+            Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
+            PropertyNameCaseInsensitive = true
+        };
+        var allVariables = new
+        {
+            Courses = Course.CourseList,
+            Pupils = Pupils.PupilsList,
+            Teacher = teacher,
+            CourseLeader = courseLeader,
+            Admin = admin
+        };
+        var path = string.Concat(Environment.CurrentDirectory, "/Data/Jason.json");
+        var json = JsonSerializer.Serialize(allVariables, options);
+
+        File.WriteAllText(path, json);
+        //Skriver ner allt 
+        //Console.WriteLine(json);
+
+        var savedJson = File.ReadAllText(path);
+        //Skriver upp allt
+        //Console.WriteLine(savedJson);
+
+        //omvandla till objekt
+        //var jason = JsonSerializer.Deserialize<allVariables>(savedJson);
     }
 }
