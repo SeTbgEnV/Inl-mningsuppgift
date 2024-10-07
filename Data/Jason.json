@@ -9,8 +9,7 @@
       "courseAddress": "Angle Blvd 3",
       "roomSize": 20,
       "courseCity": "Chicago",
-      "onSite": "50%",
-      "dueDate": "0001-01-01T00:00:00"
+      "onSite": "50%"
     },
     {
       "schoolAddress": "123-321",
@@ -21,68 +20,7 @@
       "courseAddress": "Angle Blvd 12",
       "roomSize": 24,
       "courseCity": "Chicago",
-      "onSite": "0%",
-      "dueDate": "0001-01-01T00:00:00"
+      "onSite": "0%"
     }
-  ],
-  "pupils": [
-    {
-      "firstName": "Erik",
-      "lastName": "Eriksson",
-      "age": 20,
-      "phoneNumber": "46+ 555 4321",
-      "socialNumber": "333-555-666",
-      "address": "Sankt Eriks Street",
-      "postalCode": "444-21",
-      "city": "New York"
-    },
-    {
-      "firstName": "David",
-      "lastName": "Davidsson",
-      "age": 20,
-      "phoneNumber": "46+ 512 1126",
-      "socialNumber": "671-888-317",
-      "address": "King Davids Street",
-      "postalCode": "495-29",
-      "city": "Austin"
-    }
-  ],
-  "teacher": {
-    "experience": "25+ years in IT",
-    "courseHolder": "Programming C++",
-    "firstName": "Luigi",
-    "lastName": "Mario",
-    "age": 49,
-    "phoneNumber": "49+ 555 6789",
-    "socialNumber": "513-135-882",
-    "address": "Bulevard Road 14",
-    "postalCode": "472-28",
-    "city": "Alabama"
-  },
-  "courseLeader": {
-    "dateOfEmployment": "2020-01-03",
-    "experience": "30+ years in IT",
-    "courseHolder": "",
-    "firstName": "Oskar",
-    "lastName": "Oskarsson",
-    "age": 49,
-    "phoneNumber": "27+ 222 4388",
-    "socialNumber": "231-222-231",
-    "address": "Sankt eriks Street",
-    "postalCode": "412-61",
-    "city": "Oakland City"
-  },
-  "admin": {
-    "dateOfEmployment": "2018-02-11",
-    "experience": "",
-    "courseHolder": "",
-    "firstName": "Adam",
-    "lastName": "Adminsson",
-    "age": 61,
-    "phoneNumber": "29+ 666 4441",
-    "socialNumber": "213-321-222",
-    "address": "Granlunda Street",
-    "postalCode": "444-21",
-    "city": "Los Angeles"
-  }
+  ]
 }

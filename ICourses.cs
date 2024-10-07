@@ -9,9 +9,7 @@ public interface ICourses
     public string CourseLength { get; set; }
     public string CourseStart { get; set; }
     public string CourseAddress { get; set; }
-    public int RoomSize { get; set; }
     public string CourseCity { get; set; }
     public string OnSite { get; set; }
-    public DateTime DueDate { get; set; }
     public static List<Course> CourseList{ get; set; } = new List<Course>();
 }

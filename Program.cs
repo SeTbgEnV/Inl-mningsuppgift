@@ -23,6 +23,7 @@ class Program
 
         //Course Info
         Teacher teacher = new Teacher("512-125-881");
+        teacher.AddTeachers(teacher);
         Console.WriteLine(teacher.ToString());
 
         //CourseLeader Info
@@ -38,6 +39,7 @@ class Program
         pupils.AddPupils(pupils);
         Console.WriteLine(pupils.ToString());
         teacher = new Teacher("513-135-882");
+        teacher.AddTeachers(teacher);
         Console.WriteLine(teacher.ToString());
         courseLeader = new CourseLeader("231-222-231");
         Console.WriteLine(courseLeader.ToString());
@@ -59,6 +61,11 @@ class Program
         {
             Console.WriteLine("{0}",y);
         }
+        Console.WriteLine("\nList of Teachers");
+        foreach (var z in Teacher.TeachersList)
+        {
+            Console.WriteLine("{0}",z);
+        }
         Console.ResetColor();
         var options = new JsonSerializerOptions()
         {
@@ -67,16 +74,13 @@ class Program
             Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
             PropertyNameCaseInsensitive = true
         };
-        var allVariables = new
+        var allVariables = new Variables
         {
-            Courses = Course.CourseList,
-            Pupils = Pupils.PupilsList,
-            Teacher = teacher,
-            CourseLeader = courseLeader,
-            Admin = admin
+            Courses = Course.CourseList
         };
         var path = string.Concat(Environment.CurrentDirectory, "/Data/Jason.json");
         var json = JsonSerializer.Serialize(allVariables, options);
+        
 
         File.WriteAllText(path, json);
         //Skriver ner allt 
@@ -84,9 +88,14 @@ class Program
 
         var savedJson = File.ReadAllText(path);
         //Skriver upp allt
-        //Console.WriteLine(savedJson);
+        Console.WriteLine(savedJson);
 
         //omvandla till objekt
-        //var jason = JsonSerializer.Deserialize<allVariables>(savedJson);
+        options = new JsonSerializerOptions()
+        {
+            PropertyNameCaseInsensitive = true
+        };
+        var variables = JsonSerializer.Deserialize<Variables>(savedJson, options);
+        Console.WriteLine(variables);
     }
 }

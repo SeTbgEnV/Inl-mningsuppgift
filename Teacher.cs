@@ -1,15 +1,20 @@
-﻿namespace School2;
+﻿
+namespace School2;
 
 public class Teacher : Person
 {
     // Teacher
-
+    public static List<Teacher> TeachersList { get; protected set; } = new List<Teacher>();
     public string Experience { get; protected set; } = "";
     public string CourseHolder { get; protected set; } = "";
 
     /* CONSTRUCTOR */
     public Teacher()
     {
+    }
+    public void AddTeachers(Teacher teachers)
+    {
+        TeachersList.Add(teachers);
     }
     public Teacher(string socialNumber)
     {
@@ -53,5 +58,10 @@ public class Teacher : Person
     public override string ToString()
     {
         return $"\nTeacher Name: {FirstName} {LastName}\nAge:{Age}\nPhoneNumber:{PhoneNumber}\n{CourseHolder}\nExperience:{Experience}";
+    }
+
+    internal void AddTeachers(object teachers)
+    {
+        throw new NotImplementedException();
     }
 }
