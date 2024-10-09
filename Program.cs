@@ -1,5 +1,6 @@
 ﻿using System.Text.Encodings.Web;
 using System.Text.Json;
+using System.Threading.Tasks.Dataflow;
 
 namespace School2;
 
@@ -43,7 +44,7 @@ class Program
         Console.WriteLine(teacher.ToString());
         courseLeader = new CourseLeader("231-222-231");
         Console.WriteLine(courseLeader.ToString());
-        
+
         //Admin Info
         Admin admin = new Admin();
         Console.ForegroundColor = ConsoleColor.White;
@@ -74,13 +75,12 @@ class Program
             Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
             PropertyNameCaseInsensitive = true
         };
-        var allVariables = new Variables
+        var allVariables = new
         {
-            Courses = Course.CourseList
+            Course.CourseList
         };
         var path = string.Concat(Environment.CurrentDirectory, "/Data/Jason.json");
         var json = JsonSerializer.Serialize(allVariables, options);
-        
 
         File.WriteAllText(path, json);
         //Skriver ner allt 
@@ -88,14 +88,14 @@ class Program
 
         var savedJson = File.ReadAllText(path);
         //Skriver upp allt
-        Console.WriteLine(savedJson);
+        //Console.WriteLine(savedJson);
 
         //omvandla till objekt
         options = new JsonSerializerOptions()
         {
             PropertyNameCaseInsensitive = true
         };
-        var variables = JsonSerializer.Deserialize<Variables>(savedJson, options);
-        Console.WriteLine(variables);
+        var variables = JsonSerializer.Deserialize<Course>(savedJson, options);
+        Console.WriteLine(course);
     }
 }
