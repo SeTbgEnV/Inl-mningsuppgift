@@ -1,6 +1,4 @@
-﻿using System.Net.Mail;
-
-namespace School2;
+﻿namespace School2;
 
 public class Course : ICourses
 {
@@ -14,6 +12,7 @@ public class Course : ICourses
     public int RoomSize { get; set; }
     public string CourseCity { get; set; } = "";
     public string OnSite { get; set; } = "";
+
     public static List<Course> CourseList{ get; set; } = new List<Course>();
     /* CONSTRUCTOR */
     public Course(string courseTitel)

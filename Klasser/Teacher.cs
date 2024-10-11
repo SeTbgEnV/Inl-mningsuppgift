@@ -1,5 +1,4 @@
-﻿
-namespace School2;
+﻿namespace School2;
 
 public class Teacher : Person
 {

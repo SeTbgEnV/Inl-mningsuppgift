@@ -84,10 +84,11 @@ class Program
 
         File.WriteAllText(path, json);
         //Skriver ner allt 
+        /* utkommenterad */
         //Console.WriteLine(json);
 
-        var savedJson = File.ReadAllText(path);
         //Skriver upp allt
+        /* utkommenterad */
         //Console.WriteLine(savedJson);
 
         //omvandla till objekt
@@ -95,7 +96,9 @@ class Program
         {
             PropertyNameCaseInsensitive = true
         };
-        var variables = JsonSerializer.Deserialize<Course>(savedJson, options);
-        Console.WriteLine(course);
+        var savedJson = File.ReadAllText(path);
+        //var variables = JsonSerializer.Deserialize<List<Course>>(savedJson, options);
+        Console.WriteLine("\nSkriver ut från json");
+        Console.WriteLine(savedJson);
     }
 }
