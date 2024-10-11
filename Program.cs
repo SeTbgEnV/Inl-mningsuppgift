@@ -8,9 +8,6 @@ class Program
 {
     static void Main()
     {
-        Console.Clear();
-        //Create an object from the class Course
-        // School info
         Course course = new Course("IoT - Internet of Things");
         course.AddCourses(course);
         Console.ForegroundColor = ConsoleColor.Blue;
@@ -83,21 +80,11 @@ class Program
         var json = JsonSerializer.Serialize(allVariables, options);
 
         File.WriteAllText(path, json);
-        //Skriver ner allt 
-        /* utkommenterad */
-        //Console.WriteLine(json);
-
-        //Skriver upp allt
-        /* utkommenterad */
-        //Console.WriteLine(savedJson);
-
-        //omvandla till objekt
         options = new JsonSerializerOptions()
         {
             PropertyNameCaseInsensitive = true
         };
         var savedJson = File.ReadAllText(path);
-        //var variables = JsonSerializer.Deserialize<List<Course>>(savedJson, options);
         Console.WriteLine("\nSkriver ut från json");
         Console.WriteLine(savedJson);
     }

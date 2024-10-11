@@ -14,8 +14,6 @@ public class CourseLeader : Teacher
         SocialNumber = socialNumber;
         Find();
     }
-    //Metoden Find simulerar en databas 
-    //Den tillkallar Find under i publiv virtual void
     public override void Find()
     {
         if (SocialNumber == "333-555-666")
@@ -45,8 +43,6 @@ public class CourseLeader : Teacher
             DateOfEmployment = "2020-01-03";
         }
     }
-    //Tostring skriver ut det som är deklarerat innom "databasen" till 
-    //det specifika vi har tillkallat
     public override string ToString()
     {
         return $"\nCourseLeaders Name: {FirstName} {LastName} \nCourseLeader PhoneNumber: {PhoneNumber}";

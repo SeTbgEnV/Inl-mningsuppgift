@@ -8,8 +8,6 @@ public class Admin : CourseLeader
     {
         Find();
     }
-    //Metoden Find simulerar en databas 
-    //Den tillkallar Find under i publiv virtual void
     public override void Find()
     {
         FirstName = "Adam";
@@ -22,8 +20,6 @@ public class Admin : CourseLeader
         City = "Los Angeles";
         DateOfEmployment = "2018-02-11";
     }
-    //Tostring skriver ut det som är deklarerat innom "databasen" till 
-    //det specifika vi har tillkallat
     public override string ToString()
     {
         return $"\nAdmin Name: {FirstName} {LastName}\nAdmin PhoneNumber:{PhoneNumber} ";

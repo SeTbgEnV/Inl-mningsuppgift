@@ -12,8 +12,6 @@ public class Pupils : Person
     {
         PupilsList.Add(pupils);
     }
-    //Metoden Find simulerar en databas 
-    //Den tillkallar Find under i public virtual void
     public virtual void Find()
     {
         if (SocialNumber == "333-555-666")
@@ -39,8 +37,6 @@ public class Pupils : Person
             City = "Austin";
         }
     }
-    //Tostring skriver ut det som är deklarerat innom "databasen" till 
-    //det specifika vi har tillkallat
     public override string ToString()
     {
         return $"\nPupilInfo\nPupil Name: {FirstName} {LastName}\nAge:{Age}-SSN:{SocialNumber}";
